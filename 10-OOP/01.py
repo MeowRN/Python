@@ -39,17 +39,33 @@ yueyue.age
 yueyue.dohomework()
 
 
+class Student():
+    name = "adad"
+    age = 18
+
+Meow = Student
+print(Meow.name)
 
 
+class A():
+    name = "ada"
+    age = 18
 
-#VS
+    # 注意say的寫法，參數由一個self
+    def say(self):
+        self.name = "aaa"
+        self.age = 200
 
-#fun class():
-    #name
 
-#Note:
+print(A.name)
+print(A.age)
 
-#函數爲
+print("*" *20)
+a = A()
 
-#class+類（大駝峯）+（）+：
+print(a.name)
+print(a.age)
+print(id(a.name))
+print(id(a.(age)))
 
+Teacher.sayAgain()
