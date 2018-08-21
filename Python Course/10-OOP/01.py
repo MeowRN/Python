@@ -69,3 +69,35 @@ print(id(a.name))
 print(id(a.(age)))
 
 Teacher.sayAgain()
+
+
+class Fish():
+    def _init_(self, name):
+        self.name = name
+
+    def swim(self):
+        print("i am swimming....")
+
+
+class Bird():
+    def _init_(self, name):
+        self.name = name
+
+    def fly(self):
+        print("i am fly..")
+
+
+class person():
+    def _init_(self, name):
+        self.name = name
+
+    def worked(self):
+        print('working....')
+
+
+class SuperMan(Person, Bird, Fish):
+
+
+s = SuperMan()
+s.fly()
+s.swim()
